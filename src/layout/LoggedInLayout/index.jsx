@@ -1,5 +1,5 @@
-export default function LoggedInLayout () {
+export default function LoggedInLayout ({children}) {
     return (
-        <></>
+        <>{children}</>
     )
 }

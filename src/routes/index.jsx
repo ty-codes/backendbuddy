@@ -13,8 +13,9 @@ const AppRoutes = () => {
 
   useEffect(() => {}, [location]);
 
-  const routes = loggedIn ? PageRoutes(location) : AuthRoutes(location);
-
+  // const routes = loggedIn ? PageRoutes(location) : AuthRoutes(location);
+  const routes = PageRoutes(location);
+  
   return (
     <Routes>
       <Route>

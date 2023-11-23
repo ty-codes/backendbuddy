@@ -1,0 +1,187 @@
+
+@font-face {
+  font-family: montserrat;
+  src: url(./fonts/Montserrat-Regular.woff);
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(./fonts/Montserrat-Bold.otf);
+}
+
+@font-face {
+  font-family: openSans;
+  src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+:root {
+  --primaryColor: #ff6900;
+  --textBlack: #1e1e1e;
+}
+
+.roughsheet {
+  background-color: red;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  font-size: 14px;
+  letter-spacing: 0.25px;
+}
+
+body {
+  font-family: 'openSans', 'montserrat', Arial, Helvetica, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.logo {
+  text-align: center;
+  display: inline-flex;
+  margin-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 3.4285rem;
+  line-height: 5.1428rem;
+}
+
+h3 {
+  font-size: 2.85714rem;
+  line-height: 4.2857rem;
+}
+
+h4 {
+  font-size: 2.2857rem;
+  line-height: 3.4285rem;
+}
+
+h5 {
+  font-size: 1.7142rem;
+  line-height: 2.5714rem;
+}
+
+h6 {
+  font-size: 1.4285rem;
+  line-height: 2.1428rem;
+}
+
+.t-sm {
+  font-size: 0.7rem;
+}
+
+.d-none {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.b-500 {
+  font-weight: 500;
+}
+
+.b-600 {
+  font-weight: 600;
+}
+
+.b-700 {
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-gap-m {
+  gap: 1rem;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-space-between {
+  justify-content: space-between;
+}
+
+.j-end {
+  justify-content: flex-end;
+}
+
+.red {
+  color: red !important;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.overflow-x.hidden {
+  overflow-x: hidden;
+}
+
+.overflow-x.auto {
+  overflow-x: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-black {
+  color: var(--textBlack);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.a-center {
+  align-items: center;
+}

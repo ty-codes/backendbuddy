@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
 
   @media ${device.isSmallDevice} {
     padding-inline: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
   }
 
   @media ${device.mobileL} {

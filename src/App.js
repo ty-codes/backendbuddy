@@ -9,14 +9,12 @@ import PageLayout from 'layout/PageLayout';
 function App() {
   const theme = useMemo(
     () => ({
+      black700: 'rgba(0, 0, 0, 0.7)',
       black: '#000000',
       white: '#fff',
       grey: '#AFAFAF',
       red: '#D32600',
-      primaryColor: '#ff6900',
-
-      // variables
-      sideBarWidth: '19.8571rem',
+      primaryColor: '#39AC6E',
     }),
     [],
   );

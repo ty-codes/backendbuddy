@@ -1,17 +1,15 @@
-import styled from 'styled-components';
-import { device } from 'constants';
 import { Wrapper, Header } from './Dashboard.style';
-import { Filters, Trending, Products } from 'components';
+import { Filters, Cards } from 'components';
 
 export default function Dashboard() {
   return (
     <Wrapper>
       <Header>
-        <h4>Products</h4>
+        <h6>Products</h6>
+        <p>A list of all available products, prices and other details</p>
       </Header>
       <Filters />
-      <Trending />
-      <Products />
+      <Cards />
     </Wrapper>
   );
 }

@@ -1,7 +1,7 @@
 import PageLoader from './PageLoader';
 import Filters from './Filters';
-import Trending from './Trending';
-import Products from './Products';
 import Card from './Card';
+import Title from './Title';
+import Cards from './Cards';
 
-export { PageLoader, Filters, Trending, Products, Card};
+export { PageLoader, Filters, Card, Title, Cards };

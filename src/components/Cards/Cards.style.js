@@ -39,6 +39,7 @@ export const Products = styled.div`
   justify-content: flex-start;
   width: 100%;
   gap: 3rem;
+  padding-bottom: 1.5rem;
 
   @media ${device.isSmallDevice} {
     gap: 1rem;

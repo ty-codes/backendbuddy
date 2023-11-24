@@ -110,3 +110,18 @@ export const logout = () => {
   localStorage.clear();
   window.location.reload();
 };
+
+export const prompts = [
+  {
+    text: 'Create new collection',
+    prompt: ''
+  },
+  {
+    text: 'Create a product',
+    prompt: ''
+  },
+  {
+    text: 'Delete a product',
+    prompt: ''
+  }
+]

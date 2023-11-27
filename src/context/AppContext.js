@@ -1,45 +1,27 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from 'react';
+import { iphone } from 'assets';
 
 export const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-	const [modalType, setModalType] = useState();
-	const [isOpenModal, setIsOpenModal] = useState(false);
+  const staticData = Array(20).fill({
+    image: iphone,
+    name: 'Apple iPhone 13',
+    price: '400',
+    currency: '$',
+  });
 
-	const changeModalType = (modal) => {
-		setIsOpenModal(true);
-		setModalType(modal);
-	};
+  const [data, setData] = useState(staticData);
 
-	// useEffect(() => {
-	// 	setToStorage("user", user);
-	// }, [user]);
-
-	return (
-		<AppContext.Provider
-			value={{
-				// user,
-				// setUser,
-				// isLoggedIn,
-				// setIsLoggedIn,
-				// isPlayListModalOpen,
-				// setIsPlayListModalOpen,
-				// songToAddToPlayList,
-				// setSongToAddToPlayList,
-				isOpenModal,
-				setIsOpenModal,
-				modalType,
-				setModalType,
-				changeModalType,
-			}}
-		>
-			{children}
-		</AppContext.Provider>
-	);
+  return (
+    <AppContext.Provider value={{ data, setData }}>
+      {children}
+    </AppContext.Provider>
+  );
 };
 
 export const useAppContext = () => {
-	return useContext(AppContext);
+  return useContext(AppContext);
 };
 
 export default AppProvider;

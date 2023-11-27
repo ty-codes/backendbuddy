@@ -1,32 +1,29 @@
-import { Card, Title } from 'components';
+import { Card, Title, Empty } from 'components';
 import { Products, Wrapper, Row } from './Cards.style';
-import { iphone } from 'assets';
+import { useAppContext } from 'context/AppContext';
 
 export default function Cards() {
   const types = ['Trending', 'Others'];
-  const data = {
-    image: iphone,
-    name: 'Apple iPhone 13',
-    price: '400',
-    currency: '$',
-  };
+  const { data } = useAppContext();
 
   return (
     <>
-      {types?.map(type => (
-        <Wrapper key={`${type}-card`}>
-          <Row>
-            <Title text={type} />
-            <Products>
-              {Array(20)
-                .fill(0)
-                .map((_arg, index) => (
-                  <Card key={`card-${index}`} data={data} />
+      {data.length > 0 ? (
+        types?.map(type => (
+          <Wrapper key={`${type}-card`}>
+            <Row>
+              <Title text={type} />
+              <Products>
+                {data.map((product, index) => (
+                  <Card key={`card-${index}`} data={product} />
                 ))}
-            </Products>
-          </Row>
-        </Wrapper>
-      ))}
+              </Products>
+            </Row>
+          </Wrapper>
+        ))
+      ) : (
+        <Empty />
+      )}
     </>
   );
 }

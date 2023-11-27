@@ -56,12 +56,12 @@ export const Tab = styled.div`
 
   @media ${device.isSmallDevice} {
     background-color: ${props =>
-      props.isActive ? props.theme.primaryColor : 'rgba(238, 238, 238, 0.3)'};
+      props.isActive ? props.theme.primaryColor : 'rgba(222, 241, 231, 0.5)'};
     border-radius: 0.8rem;
     height: 3rem;
     padding-inline: 1.2rem;
     justify-content: center;
-    border: ${props => props.isActive ? 'none' : '1px solid #ccc'};
+    border: ${props => props.isActive ? 'none' : '1px solid rgba(57, 172, 110, 0.7)'};
   }
 
   p {

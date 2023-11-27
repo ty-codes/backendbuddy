@@ -48,6 +48,12 @@ export const Content = styled.div`
       height: 2.5rem;
     }
   }
+
+  h6 {
+    @media ${device.isSmallDevice} {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 export const Avatar = styled.div`

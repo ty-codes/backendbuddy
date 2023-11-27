@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 2rem 6rem 0 6rem;
-  gap: 6rem;
+  gap: 8rem;
   margin-top: 5rem;
 
   @media ${device.isSmallDevice} {
@@ -23,9 +23,18 @@ export const Wrapper = styled.div`
 
 export const Button = styled.a`
   text-decoration: none;
-  padding: 1rem 1.5rem;
   background-color: ${props => props.theme.primaryColor};
   border-radius: 50%;
+  width: 4.7rem;
+  height: 4.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 4rem;
+    height: 4rem;
+  }
 `;
 
 export const Text = styled.div`

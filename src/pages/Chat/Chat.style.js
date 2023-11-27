@@ -12,7 +12,7 @@ export const Wrapper = styled.main`
 export const Banner = styled.div`
     background-color: ${props => props.theme.primaryColor};
     height: 100vh;
-    width: 40vw;
+    width: 40%;
     min-width: 24rem;
     display: flex;
     justify-content: center;

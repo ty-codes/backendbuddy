@@ -1,5 +1,6 @@
 import { error404, error404Mobile } from 'assets';
 import { Wrapper, Footer, Button, Image, Text } from './Empty.style';
+import { ChatPlusIcon } from 'assets/svg';
 
 export default function Empty() {
   return (
@@ -13,7 +14,7 @@ export default function Empty() {
           <img src={error404Mobile} alt="Error 404" />
         </span>
         <Footer>
-          <Button href="chat">+</Button>
+          <Button href="chat"><ChatPlusIcon /></Button>
           <p>Click to add products to your database</p>
         </Footer>
       </Text>

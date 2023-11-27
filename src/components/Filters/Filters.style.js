@@ -29,6 +29,8 @@ export const Row = styled.div`
 
   @media ${device.isSmallDevice} {
     justify-content: flex-start;
+    width: 100vw;
+    padding-right: max(20vw, 5rem);
   }
 
   &::-webkit-scrollbar {

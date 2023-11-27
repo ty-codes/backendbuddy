@@ -17,6 +17,8 @@ export const Wrapper = styled.div`
 export const Header = styled.div`
   border-bottom: 1px solid #eee;
   width: 100%;
+  position: sticky;
+  top: 0;
 `;
 
 export const Content = styled.div`
@@ -94,8 +96,10 @@ export const Messages = styled.div``;
 
 export const Input = styled.div`
   position: fixed;
-  bottom: 1.5rem;
+  bottom: 0;
+  padding-block: 1rem 1.5rem;
   width: inherit;
+  background-color: #F8F8F8;
 
   div {
     display: flex;

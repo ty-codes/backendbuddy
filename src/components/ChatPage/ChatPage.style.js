@@ -52,8 +52,8 @@ export const Content = styled.div`
 
 export const Avatar = styled.div`
   background-color: #ccc;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   background-image: url(${props => props.background});
   background-position: center;
@@ -101,6 +101,7 @@ export const Input = styled.div`
     margin: auto;
     border: 1px solid rgba(57, 172, 110, 0.58);
     background: rgba(57, 172, 110, 0.07);
+    border-radius: 0.3rem;
 
     @media ${device.mobileM} {
       width: 21.42rem;
@@ -132,5 +133,6 @@ export const AiAvatar = styled.div`
 
   h6 {
     font-weight: 600;
+    font-size: 1.2rem;
   }
 `;

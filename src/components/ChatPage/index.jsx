@@ -9,7 +9,7 @@ import {
   AiAvatar,
 } from './ChatPage.style';
 import { prompts } from 'constants';
-import { businessman } from 'assets';
+import { ai } from 'assets';
 import { AirplaneIcon, LogoIcon, QuestionIcon } from 'assets/svg';
 import { CameraOutlined } from '@ant-design/icons';
 
@@ -26,8 +26,8 @@ export default function Chat() {
         </Content>
       </Header>
       <AiAvatar>
-        <Avatar background={businessman} />
-        <h6>Ada</h6>
+        <Avatar background={ai} />
+        {/* <h6>Ada</h6> */}
       </AiAvatar>
       <Suggestions>
         {prompts?.map((prompt, index) => (

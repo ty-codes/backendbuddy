@@ -10,7 +10,7 @@ export const Wrapper = styled.main`
 `;
 
 export const Banner = styled.div`
-    background-color: ${props => props.theme.primaryColor};
+    background-color: #97BFA9;
     height: 100vh;
     width: 40%;
     min-width: 24rem;
@@ -32,7 +32,7 @@ export const Text = styled.div`
     margin: auto;
 
     h4 {
-        color: ${props => props.theme.white};
+        color: ${props => props.theme.black700};
         text-align: center;
         font-weight: 700;
     }

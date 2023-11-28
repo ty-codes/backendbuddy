@@ -1,10 +1,46 @@
-import React from "react";
-import { Wrapper } from "./TopNav.style";
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import { useMediaQuery } from 'react-responsive';
+import {
+  OffcanvasBody,
+  OffcanvasHeader,
+  Row,
+  OffcanvasTitle,
+  Nav
+} from './TopNav.style';
+import { LogoIcon } from 'assets/svg';
 
-export default function TopNav({ isSmallDevice, setIsSideNavOpen }) {
+export default function TopNav() {
+  const isMobile = useMediaQuery({ maxWidth: '768px' });
   return (
-    <Wrapper id="topNav">
-      
-    </Wrapper>
+    <>
+      {['md'].map(expand => (
+        <Nav key={expand} bg="#000000" expand={expand} className="mb-0">
+          <>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Brand><LogoIcon /></Navbar.Brand>
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <OffcanvasHeader closeButton>
+                <OffcanvasTitle id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <LogoIcon />
+                </OffcanvasTitle>
+              </OffcanvasHeader>
+              <OffcanvasBody>
+                  <Row>
+                    <a href="/">Home</a>
+                    <a href="/chat">Chat</a>
+                    <a href="/">Support</a>
+                    <a href="/">Feedback</a>
+                  </Row>
+              </OffcanvasBody>
+            </Navbar.Offcanvas>
+          </>
+        </Nav>
+      ))}
+    </>
   );
 }

@@ -185,3 +185,13 @@ h6 {
 .a-center {
   align-items: center;
 }
+
+.offcanvas.show svg  {
+  width: 3rem;
+  height: 3rem;
+
+  @media (max-width: 600px) {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}

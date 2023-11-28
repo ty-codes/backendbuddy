@@ -1,86 +1,96 @@
-import styled from "styled-components";
-import { device } from "constants";
+import styled from 'styled-components';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Navbar from 'react-bootstrap/Navbar';
+import { device } from 'constants';
 
-export const Wrapper = styled.nav`
-  display: flex;
-  // width: 100%;
-  align-items: center;
-  padding: 1.2rem 1.85rem;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: all 1s ease;
-  z-index: 5;
-  width: calc(100vw - ${(props) => props.theme.sideBarWidth});
-  float: right;
-  justify-content: space-between;
-  background: #ffffff;
-
-  .input-wrap {
-    margin-bottom: 0;
-  }
-
-  .searchbar {
-    height: 2.7rem;
-    width: 20vw;
-    min-width: 10.6rem;
-    border-radius: 2rem;
-
+export const OffcanvasTitle = styled(Offcanvas.Title)`
+  img {
     @media ${device.isSmallDevice} {
-      margin-left: 0.65rem;
+      width: 8rem;
+      height: 8rem;
     }
   }
+`;
 
-  @media ${device.laptop} {
-    width: calc(100vw - 11.8rem);
-  }
+export const OffcanvasBody = styled(Offcanvas.Body)`
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 1rem;
 
   @media ${device.isSmallDevice} {
-    width: 100%;
-    padding-inline: 0.65rem;
-    gap: 0.5rem;
+    margin-inline: 0;
   }
 
-  .burger {
-    margin-right: 0.65rem;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: ${props => props.theme.black};
+    font-weight: 600;
+    text-align: center;
 
-    rect {
-      fill: ${(props) => props.theme.primaryColor};
-    }
-  }
-
-  .flex.icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
-`;
-
-export const Avatar = styled.span`
-  position: relative;
-
-  img {
-    width: 2.7rem;
-    height: 2.7rem;
-    border-radius: 50%;
-    object-fit: cover;
-
-    @media (max-width: 520px) {
-      width: 1.8rem;
-      height: 1.8rem;
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      color: ${props => props.theme.black};
     }
   }
 `;
 
-export const User = styled.div`
+export const OffcanvasHeader = styled(Offcanvas.Header)``;
+
+export const Nav = styled(Navbar)`
+  padding-inline: 6rem 1rem;
   display: flex;
-  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
 
-  .user-details {
-    @media (max-width: 520px) {
-      display: none;
+  @media ${device.isSmallDevice} {
+    padding-inline: 2rem;
+  }
+
+  @media ${device.mobileL} {
+    padding-inline: 1rem;
+  }
+
+  .offcanvas.offcanvas-end {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    
+    svg {
+      width: 3rem;
+      height: 3rem;
+  
+      @media ${device.isSmallDevice} {
+        width: 2.2rem;
+        height: 2.2rem;
+      }
     }
+  }
+`;
+
+export const Row = styled.div`
+  display: flex;
+  align-items: center;
+  width: inherit;
+  justify-content: space-between;
+  gap: 2rem;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 `;

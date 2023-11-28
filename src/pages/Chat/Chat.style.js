@@ -16,9 +16,18 @@ export const Banner = styled.div`
     min-width: 24rem;
     display: flex;
     justify-content: center;
+    position: relative;
 
     @media ${device.isSmallDevice} {
         display: none;
+    }
+
+    svg {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        width: 3rem;
+        height: 3rem;
     }
 `;
 

@@ -7,6 +7,7 @@ export const Wrapper = styled.main`
 
 export const Header = styled.div`
   padding: 2rem 6rem 0 6rem;
+  margin-top: 4rem;
 
   @media ${device.isSmallDevice} {
     padding-inline: 2rem;

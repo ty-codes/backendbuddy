@@ -45,6 +45,11 @@ export const Nav = styled(Navbar)`
   justify-content: space-between;
   align-items: center;
   padding-block: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  background: #f8f8f8;
 
   @media ${device.isSmallDevice} {
     padding-inline: 2rem;
@@ -67,11 +72,11 @@ export const Nav = styled(Navbar)`
   .navbar-brand {
     margin: 0;
     padding: 0;
-    
+
     svg {
       width: 3rem;
       height: 3rem;
-  
+
       @media ${device.isSmallDevice} {
         width: 2.2rem;
         height: 2.2rem;

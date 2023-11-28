@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import { useMediaQuery } from 'react-responsive';
 import {
   OffcanvasBody,
   OffcanvasHeader,
@@ -11,7 +10,7 @@ import {
 import { LogoIcon } from 'assets/svg';
 
 export default function TopNav() {
-  const isMobile = useMediaQuery({ maxWidth: '768px' });
+
   return (
     <>
       {['md'].map(expand => (

@@ -1,11 +1,4 @@
 import Swal from 'sweetalert2';
-import {
-  FacebookOutlined,
-  InstagramOutlined,
-  TwitterOutlined,
-  LinkedinOutlined,
-  BehanceOutlined,
-} from '@ant-design/icons';
 
 const width = {
   mobileS: '320px',

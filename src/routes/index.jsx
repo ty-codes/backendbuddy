@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import AuthRoutes from './AuthRoutes';
 import PageRoutes from './PageRoutes';
 import { useLocation } from 'react-router';
 import { Route, Routes } from 'react-router-dom';
@@ -7,9 +6,9 @@ import { isAuthenticated } from './redirects';
 
 const AppRoutes = () => {
   const location = useLocation();
-  const auth_token = localStorage.getItem('bearer_token');
+  // const auth_token = localStorage.getItem('bearer_token');
 
-  const loggedIn = auth_token !== null;
+  // const loggedIn = auth_token !== null;
 
   useEffect(() => {}, [location]);
 

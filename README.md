@@ -4,7 +4,7 @@ This repository contains the sorce code for BackendBuddy (Frontend).
 BackendBuddy transforms how businesses interact with data by building a system where non-tech savvy users can query an e-commerce database using simple, everyday language.
 
 ## Challenge
-Conersing with an E-commerce database
+Conversing with an E-commerce database
 
 ## Challenge Tag
 AI/ML
@@ -31,7 +31,7 @@ Users can:
 
 ## Stack
 - Frontend - _React_
-- Backend - ChatGPT API, NodeJS, MongoDB
+- Backend - _ChatGPT API_, _NodeJS_, _MongoDB_
 
 ## Design
 - [Figma](https://www.figma.com/file/D7EuKPPj18bOSPEZF13WIo/Design-Task?type=design&t=5Lknrjv9GxtNPkTA-6)

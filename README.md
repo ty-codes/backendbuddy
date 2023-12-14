@@ -40,7 +40,7 @@ Users can:
 - [Netlify](https://backendbuddy.netlify.app/)
 
 ## Backend
-- [Github](https://github.com/ty-codes/backendbuddy_backend)
+- [Github](https://github.com/ty-codes/backendbuddy-backend)
 
 ## Build Setup
 
